@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>CaptureKit</AssemblyName>
+    <RootNamespace>CaptureKit</RootNamespace>
+    <PackageId>CaptureKit</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Title>CaptureKit .NET SDK</Title>
+    <Authors>CaptureKit</Authors>
+    <Company>CaptureKit</Company>
+    <Copyright>Copyright (c) 2026 CaptureKit</Copyright>
+    <Description>Official .NET SDK for the CaptureKit screenshot API.</Description>
+    <PackageTags>screenshot-api;website-screenshot;url-to-pdf;web-content;api;sdk;capturekit</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.capturekit.dev</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/capturekitdev/capturekit-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Link="LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="CaptureKit.Tests" />
+  </ItemGroup>
+</Project>
